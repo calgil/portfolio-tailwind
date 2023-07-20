@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         accent: "rgba(100, 255, 218, 1)",
       },
+      boxShadow: {
+        "gradient-accent": "inset 0 -3px 0 0 rgba(100, 255, 218, 1)",
+      },
     },
   },
   plugins: [],
