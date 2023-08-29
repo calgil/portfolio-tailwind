@@ -39,7 +39,7 @@ export const Projects = () => {
   return (
     <section className="mt-40">
       <h3 className="text-3xl">Projects</h3>
-      <div className="my-10 flex flex-wrap gap-10">
+      <div className="my-10 max-w-4xl flex flex-wrap gap-5">
         {projects.map((project, i) => (
           <ProjectCard key={i} project={project} />
         ))}
