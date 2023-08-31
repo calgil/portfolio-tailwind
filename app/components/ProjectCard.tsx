@@ -7,21 +7,33 @@ type ProjectCardProps = {
 
 export const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className="border-2 border-solid border-rich-black py-4 rounded-lg drop-shadow-md">
-      <div className="flex align-middle justify-between px-4 py-4">
-        <h4 className="text-3xl text-accent">{project.title}</h4>
-        <div className=" relative w-5">
-          <Image src="/link.svg" alt="link" fill />
+    <div className=" border-2 border-solid border-black-rich pt-4 rounded-lg transition duration-250 ease-out drop-shadow-md hover:scale-105">
+      <a href={project.linkUrl} rel="noopener noreferrer" target="_blank">
+        <div className="flex align-middle justify-between px-4 py-4">
+          <h4 className="text-3xl text-accent">{project.title}</h4>
+          {/* <div className="relative w-5">
+            <Image src="/link.svg" alt="link" fill />
+          </div> */}
         </div>
-      </div>
-      <Image
-        src={project.imgUrl}
-        alt={project.title}
-        width="0"
-        height="0"
-        sizes="100vw"
-        className="w-80 h-auto"
-      />
+        <div className="relative w-80 h-44">
+          <Image
+            src={project.imgUrl}
+            alt={project.title}
+            fill
+            sizes="320px, 166px"
+          />
+        </div>
+        <ul className="p-4 flex gap-2">
+          {project.skills.map((skill) => (
+            <li key={skill} className="text-gray-400">
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </a>
+      <a href="https://tailwindcss.com/docs/transition-timing-function">
+        Click
+      </a>
     </div>
   );
 };

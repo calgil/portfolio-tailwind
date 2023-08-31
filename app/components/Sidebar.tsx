@@ -16,10 +16,10 @@ export const Sidebar = () => {
                 key={link.title}
                 className="mb-4 pr-6 pb-1 relative group transition-all duration-200 hover:scale-105"
               >
-                <Link href={link.url} className="text-base">
+                <a href={link.url} className="text-base">
                   <span className="text-accent mr-2">0.{i + 1}</span>
                   <span className="font-bold">{link.title}</span>
-                </Link>
+                </a>
                 <div className="h-1 w-full absolute bottom-0 left-0 bg-gradient-to-r from-accent via-accent-85 to-transparent transition-all duration-200 opacity-0 group-hover:opacity-100"></div>
               </li>
             ))}

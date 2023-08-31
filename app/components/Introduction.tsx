@@ -1,6 +1,6 @@
 export const Introduction = () => {
   return (
-    <section id="introduction" className="pt-48">
+    <section id="about" className="pt-48">
       <div className=" w-full sm:w-3/4">
         <h1 className="text-3xl">Hi, I&apos;m Calvin!</h1>
         <p className="mt-6 text-xl">

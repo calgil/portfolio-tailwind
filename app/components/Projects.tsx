@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ProjectCard } from "./ProjectCard";
 
 export type ProjectCardType = {
@@ -12,32 +11,26 @@ export const Projects = () => {
   const projects: ProjectCardType[] = [
     {
       title: "14ers",
-      linkUrl: "/",
+      linkUrl: "https://www.climb-colorado-fourteeners.app/",
       imgUrl: "/14ers.png",
-      skills: ["react", "S3"],
+      skills: ["react", "S3", "MongoDB"],
     },
     {
-      title: "14ers",
-      linkUrl: "/",
-      imgUrl: "/14ers.png",
-      skills: ["react", "S3"],
+      title: "Veterinary Center",
+      linkUrl: "https://www.northspringsvrc.com/",
+      imgUrl: "/vet.png",
+      skills: ["next", "Typescript", "SCSS"],
     },
     {
-      title: "14ers",
-      linkUrl: "/",
-      imgUrl: "/14ers.png",
-      skills: ["react", "S3"],
-    },
-    {
-      title: "14ers",
-      linkUrl: "/",
-      imgUrl: "/14ers.png",
-      skills: ["react", "S3"],
+      title: "Solar",
+      linkUrl: "https://solar-project-self.vercel.app/",
+      imgUrl: "/solar.png",
+      skills: ["react", "firebase"],
     },
   ];
 
   return (
-    <section className="mt-40">
+    <section id="projects" className="mt-40">
       <h3 className="text-3xl">Projects</h3>
       <div className="my-10 max-w-4xl flex flex-wrap gap-5">
         {projects.map((project, i) => (
