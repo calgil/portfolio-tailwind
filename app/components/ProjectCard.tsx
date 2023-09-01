@@ -11,9 +11,6 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       <a href={project.linkUrl} rel="noopener noreferrer" target="_blank">
         <div className="flex align-middle justify-between px-4 py-4">
           <h4 className="text-3xl text-accent">{project.title}</h4>
-          {/* <div className="relative w-5">
-            <Image src="/link.svg" alt="link" fill />
-          </div> */}
         </div>
         <div className="relative w-80 h-44">
           <Image
@@ -31,9 +28,11 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
           ))}
         </ul>
       </a>
-      <a href="https://tailwindcss.com/docs/transition-timing-function">
-        Click
-      </a>
+      <div className="mb-2 pr-4 flex justify-end">
+        <a href={project.repoUrl} rel="noopener noreferrer" target="_blank">
+          <Image src="/github.png" alt="github" width={24.21} height={23.61} />
+        </a>
+      </div>
     </div>
   );
 };

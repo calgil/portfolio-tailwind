@@ -32,7 +32,7 @@ export const Sidebar = () => {
           >
             <Image
               src="/gitHub.png"
-              alt="git hub"
+              alt="github"
               width={24.21}
               height={23.61}
             />
