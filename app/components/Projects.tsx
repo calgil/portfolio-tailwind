@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="mt-40">
+    <section id="projects" className="mt-20">
       <h3 className="text-3xl">Projects</h3>
       <div className="my-10 max-w-4xl flex flex-wrap gap-5">
         {myProjects.map((project) => (
