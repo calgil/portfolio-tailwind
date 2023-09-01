@@ -1,4 +1,4 @@
-import { myProjects } from "../data/projectCards";
+import { myProjects } from "../data/myProjects";
 import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {

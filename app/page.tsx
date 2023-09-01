@@ -1,6 +1,7 @@
 import { Introduction } from "./components/Introduction";
 import { Projects } from "./components/Projects";
 import { Sidebar } from "./components/Sidebar";
+import { Skills } from "./components/Skills";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <div className="w-full px-8 py-10 sm:w-2/3 sm:px-2 md:w-3/4">
         <Introduction />
         <Projects />
+        <Skills />
       </div>
     </main>
   );
