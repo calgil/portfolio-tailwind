@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ProjectCardType } from "./Projects";
+import { ProjectCardType } from "../types/projectCard.type";
 
 type ProjectCardProps = {
   project: ProjectCardType;
