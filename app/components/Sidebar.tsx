@@ -6,8 +6,8 @@ export const Sidebar = () => {
   return (
     <div className="hidden w-1/3 pt-16 px-6 pr-0 h-screen sticky top-0 sm:flex justify-center md:w-1/4">
       <div className="flex flex-col align-middle">
-        <Link href="/" className="flex align-middle justify-center">
-          <Image src="/C.webp" alt="logo" width={76.27} height={111.62} />
+        <Link href="/" className="flex align-middle justify-center py-2">
+          <Image src="/logo.svg" alt="logo" width={76.27} height={111.62} />
         </Link>
         <div className="flex flex-col">
           <ul className="w-full mt-10">
