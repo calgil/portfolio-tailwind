@@ -30,7 +30,7 @@ export const ProjectCard = ({ project }: ProjectCardProps) => {
       </a>
       <div className="mb-2 pr-4 flex justify-end">
         <a href={project.repoUrl} rel="noopener noreferrer" target="_blank">
-          <Image src="/github.png" alt="github" width={24.21} height={23.61} />
+          <Image src="/gitHub.png" alt="github" width={24.21} height={23.61} />
         </a>
       </div>
     </div>
